@@ -7,6 +7,8 @@ import About from "./components/About";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import ContactForm from "./components/ContactForm";
+
 
 class App extends Component {
 
@@ -95,7 +97,7 @@ class App extends Component {
           >
             <span
               className="iconify language-icon mr-5"
-              data-icon="twemoji-flag-for-flag-united-kingdom"
+              data-icon="twemoji-flag-for-flag-canada"
               data-inline="false"
               id={window.$primaryLanguageIconId}
             ></span>
@@ -111,7 +113,7 @@ class App extends Component {
           >
             <span
               className="iconify language-icon"
-              data-icon="twemoji-flag-for-flag-poland"
+              data-icon="twemoji-flag-for-flag-france"
               data-inline="false"
               id={window.$secondaryLanguageIconId}
             ></span>
@@ -133,6 +135,7 @@ class App extends Component {
           resumeExperience={this.state.resumeData.experience}
           resumeBasicInfo={this.state.resumeData.basic_info}
         />
+        <ContactForm/>
         <Footer sharedBasicInfo={this.state.sharedData.basic_info} />
       </div>
     );

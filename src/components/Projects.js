@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ProjectDetailsModal from "./ProjectDetailsModal";
+import image from '../images/portfolio/4.github-user-search/p1.jpg';
 
 class Projects extends Component {
   constructor(props) {
